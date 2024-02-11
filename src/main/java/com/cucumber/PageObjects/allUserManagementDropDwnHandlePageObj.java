@@ -15,9 +15,9 @@ public class allUserManagementDropDwnHandlePageObj {
 
 	By userMenu = By.xpath("//span[text()='Users']/../../../..");
 	By institutinsDropDown = By.xpath("//mat-label[text()='Institutions:']/../../../..");
-	By instSelect =By.xpath("//span[text()='ResponsiveEd Institution']");
+	By instSelect =By.xpath("//span[text()='ResponsiveEd Institutions']");
 	By rolesDropDown = By.xpath("//mat-label[text()=\"Role's:\"]/../../../..");
-	By roleSelect = By.xpath("//span[text()='Administrator']");
+	By roleSelect = By.xpath("(//span[text()='Administrator'])[2]");
 	By enrollmentStatusDropDown = By.xpath("//mat-label[text()='Enrollment Status:']/../../../..");
 	By statusSelect = By.xpath("(//span[text()='All'])[2]");
 	By searchByDropDown = By.xpath("//mat-label[text()='Search By:']/../../../..");
@@ -38,6 +38,7 @@ public class allUserManagementDropDwnHandlePageObj {
 
 
 	public void SelectinstitutinsDropDown() throws Exception {
+		Thread.sleep(2000);
 		Constants.driver.findElement(institutinsDropDown).click();
 		Thread.sleep(2000);
 		Constants.driver.findElement(instSelect).click();
