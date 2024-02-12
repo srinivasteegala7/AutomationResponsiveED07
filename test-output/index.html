@@ -56,7 +56,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-NspiraHrmsPortal" class="navigator-link ">
-                    <span class="test-stats">4 tests</span>
+                    <span class="test-stats">6 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">6 methods,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -122,6 +122,16 @@
                         <a href="#" panel-name="suite-NspiraHrmsPortal" title="com.cucumber.TestRunner.sreachUserRunner" class="method navigator-link" hash-for-method="feature(Administrator - Search User)">feature(Administrator - Search User)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-NspiraHrmsPortal" title="com.cucumber.TestRunner.EditparticularuserdetailsRunner" class="method navigator-link" hash-for-method="feature(Administrator - Edit particular user details)">feature(Administrator - Edit particular user details)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-NspiraHrmsPortal" title="com.cucumber.TestRunner.CreateDuplicateUserRunner" class="method navigator-link" hash-for-method="feature(Administrator - Check the flow of Duplicate user)">feature(Administrator - Check the flow of Duplicate user)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content passed suite-NspiraHrmsPortal -->
                   </li>
                 </ul>
@@ -146,6 +156,42 @@
                   </a> <!-- feature(Login - Check the flow of login with valid credentials) -->
                   <span class="method-name">feature</span>
                   <span class="parameters">(Login - Check the flow of login with valid credentials)</span>
+                  <em>
+(Runs Cucumber Feature)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-NspiraHrmsPortal-class-passed -->
+          <div class="suite-NspiraHrmsPortal-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.cucumber.TestRunner.EditparticularuserdetailsRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="feature(Administrator - Edit particular user details)">
+                  </a> <!-- feature(Administrator - Edit particular user details) -->
+                  <span class="method-name">feature</span>
+                  <span class="parameters">(Administrator - Edit particular user details)</span>
+                  <em>
+(Runs Cucumber Feature)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-NspiraHrmsPortal-class-passed -->
+          <div class="suite-NspiraHrmsPortal-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.cucumber.TestRunner.CreateDuplicateUserRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="feature(Administrator - Check the flow of Duplicate user)">
+                  </a> <!-- feature(Administrator - Check the flow of Duplicate user) -->
+                  <span class="method-name">feature</span>
+                  <span class="parameters">(Administrator - Check the flow of Duplicate user)</span>
                   <em>
 (Runs Cucumber Feature)                  </em>
                 </div> <!-- method-content -->
@@ -243,6 +289,18 @@
       &lt;class name=&quot;com.cucumber.TestRunner.sreachUserRunner&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- sreachUserRunner --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Edit Particulaser details&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.cucumber.TestRunner.EditparticularuserdetailsRunner&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Edit Particulaser details --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;CreateDuplicateUser&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.cucumber.TestRunner.CreateDuplicateUserRunner&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- CreateDuplicateUser --&gt;
 &lt;/suite&gt; &lt;!-- NspiraHrmsPortal --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -264,6 +322,12 @@
               </li>
               <li>
                 <span class="test-name">sreachUserRunner (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Edit Particulaser details (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">CreateDuplicateUser (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -297,28 +361,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'feature')
-data.setCell(0, 2, 'com.cucumber.TestRunner.CreateNewUserRunner')
-data.setCell(0, 3, 62115);
+data.setCell(0, 2, 'com.cucumber.TestRunner.EditparticularuserdetailsRunner')
+data.setCell(0, 3, 66850);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'feature')
-data.setCell(1, 2, 'com.cucumber.TestRunner.sreachUserRunner')
-data.setCell(1, 3, 58051);
+data.setCell(1, 2, 'com.cucumber.TestRunner.CreateNewUserRunner')
+data.setCell(1, 3, 62209);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'feature')
-data.setCell(2, 2, 'com.cucumber.TestRunner.UserManagementDropDwnRunner')
-data.setCell(2, 3, 53917);
+data.setCell(2, 2, 'com.cucumber.TestRunner.sreachUserRunner')
+data.setCell(2, 3, 58128);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'feature')
-data.setCell(3, 2, 'com.cucumber.TestRunner.LoginRunner')
-data.setCell(3, 3, 11514);
+data.setCell(3, 2, 'com.cucumber.TestRunner.CreateDuplicateUserRunner')
+data.setCell(3, 3, 57742);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'feature')
+data.setCell(4, 2, 'com.cucumber.TestRunner.UserManagementDropDwnRunner')
+data.setCell(4, 3, 53913);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'feature')
+data.setCell(5, 2, 'com.cucumber.TestRunner.LoginRunner')
+data.setCell(5, 3, 11730);
 window.suiteTableData['NspiraHrmsPortal']= { tableData: data, tableDiv: 'times-div-NspiraHrmsPortal'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <span class="suite-total-time">Total running time: 5 minutes</span>
               <div id="times-div-NspiraHrmsPortal">
               </div> <!-- times-div-NspiraHrmsPortal -->
             </div> <!-- times-div -->
@@ -369,6 +441,26 @@ return data;
                 <span class="reporter-method-output">Test Status: Pass</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">feature(Administrator - Edit particular user details)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">About to begin executing following method : AbstractTestNGCucumberTests.feature</span>
+                <span class="reporter-method-output">Completed executing following method : AbstractTestNGCucumberTests.feature</span>
+                <span class="reporter-method-output">Test Method resides in com.cucumber.TestRunner.EditparticularuserdetailsRunner</span>
+                <span class="reporter-method-output">Test Method had the following parameters : nullAdministrator - Edit particular user details,</span>
+                <span class="reporter-method-output">Test Status: Pass</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">feature(Administrator - Check the flow of Duplicate user)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">About to begin executing following method : AbstractTestNGCucumberTests.feature</span>
+                <span class="reporter-method-output">Completed executing following method : AbstractTestNGCucumberTests.feature</span>
+                <span class="reporter-method-output">Test Method resides in com.cucumber.TestRunner.CreateDuplicateUserRunner</span>
+                <span class="reporter-method-output">Test Method had the following parameters : nullAdministrator - Check the flow of Duplicate user,</span>
+                <span class="reporter-method-output">Test Status: Pass</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-NspiraHrmsPortal" class="panel">
@@ -391,88 +483,134 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">beforeclass(chrome)</span>
-                <span class="method-start">245 ms</span>
+                <span class="method-start">232 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">feature(Login - Check the flow of login with valid credentials)</span>
-                <span class="method-start">7389 ms</span>
+                <span class="method-start">5175 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">testDownClass</span>
-                <span class="method-start">18911 ms</span>
+                <span class="method-start">16911 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">19110 ms</span>
+                <span class="method-start">17123 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.cucumber.TestRunner.CreateNewUserRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUpClass</span>
-                <span class="method-start">19411 ms</span>
+                <span class="method-start">17472 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">beforeclass(chrome)</span>
-                <span class="method-start">19445 ms</span>
+                <span class="method-start">17494 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">feature(Administrator - Check the flow of Create New User)</span>
-                <span class="method-start">22432 ms</span>
+                <span class="method-start">20679 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">testDownClass</span>
-                <span class="method-start">84550 ms</span>
+                <span class="method-start">82890 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">84740 ms</span>
+                <span class="method-start">83077 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.cucumber.TestRunner.UserManagementDropDwnRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUpClass</span>
-                <span class="method-start">84794 ms</span>
+                <span class="method-start">83142 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">beforeclass(chrome)</span>
-                <span class="method-start">84806 ms</span>
+                <span class="method-start">83155 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">feature(Administrator - Check the flow of all User Management Drop Down Handle)</span>
-                <span class="method-start">87917 ms</span>
+                <span class="method-start">86409 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">testDownClass</span>
-                <span class="method-start">141836 ms</span>
+                <span class="method-start">140324 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">142027 ms</span>
+                <span class="method-start">140509 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.cucumber.TestRunner.sreachUserRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUpClass</span>
-                <span class="method-start">142115 ms</span>
+                <span class="method-start">140552 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">beforeclass(chrome)</span>
-                <span class="method-start">142130 ms</span>
+                <span class="method-start">140564 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">feature(Administrator - Search User)</span>
-                <span class="method-start">145451 ms</span>
+                <span class="method-start">143874 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">testDownClass</span>
-                <span class="method-start">203505 ms</span>
+                <span class="method-start">202004 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">203695 ms</span>
+                <span class="method-start">202193 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cucumber.TestRunner.EditparticularuserdetailsRunner</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass</span>
+                <span class="method-start">202235 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeclass(chrome)</span>
+                <span class="method-start">202242 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">feature(Administrator - Edit particular user details)</span>
+                <span class="method-start">205006 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">testDownClass</span>
+                <span class="method-start">271860 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">272104 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.cucumber.TestRunner.CreateDuplicateUserRunner</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass</span>
+                <span class="method-start">272154 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeclass(chrome)</span>
+                <span class="method-start">272166 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">feature(Administrator - Check the flow of Duplicate user)</span>
+                <span class="method-start">275558 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">testDownClass</span>
+                <span class="method-start">333302 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">333551 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

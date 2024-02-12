@@ -2,11 +2,10 @@ package com.cucumber.managers;
 
 import org.apache.log4j.xml.DOMConfigurator;
 
-
-
-
+import com.cucumber.PageObjects.CreateDuplicateUserPageObj;
 import com.cucumber.PageObjects.CreateUserPageObj;
 import com.cucumber.PageObjects.DropDownPageObj;
+import com.cucumber.PageObjects.EditparticularuserdetailspageObj;
 import com.cucumber.PageObjects.LoginPageObjects;
 import com.cucumber.PageObjects.allUserManagementDropDwnHandlePageObj;
 import com.cucumber.PageObjects.sreachUserpageObj;
@@ -28,6 +27,10 @@ public class PageObjectManager {
 	private DropDownPageObj DropD;
 
 	private Log log;
+	
+	private EditparticularuserdetailspageObj edit;
+	 
+	private CreateDuplicateUserPageObj Duplicate;
 
 	
 	
@@ -82,6 +85,18 @@ public class PageObjectManager {
 		return dropDown;
 	}
 
-
+	public EditparticularuserdetailspageObj getEditUser() {
+		if (edit == null) {
+			edit = new EditparticularuserdetailspageObj(Constants.driver);
+		}
+		return edit;
+	}
+	
+	public CreateDuplicateUserPageObj getDuplicateUser() {
+		if (Duplicate == null) {
+			Duplicate = new CreateDuplicateUserPageObj(Constants.driver);
+		}
+		return Duplicate;
+	}
 	
 }

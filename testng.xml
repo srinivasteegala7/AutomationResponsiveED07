@@ -475,6 +475,23 @@
 		</classes>
 	</test>
  
+ <test name="Edit Particulaser details">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.cucumber.TestRunner.EditparticularuserdetailsRunner" />	
+			
+		</classes>
+	</test>
+ 
+ <test name="CreateDuplicateUser">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.cucumber.TestRunner.CreateDuplicateUserRunner" />	
+			
+		</classes>
+	</test>
+ 
+ 
 </suite>
 
 
