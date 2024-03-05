@@ -442,7 +442,7 @@
 	</test>-->
 	
 	
-	 <test name="LoginRunner">
+	<test name="LoginRunner">
 		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="com.cucumber.TestRunner.LoginRunner" />	
@@ -492,6 +492,31 @@
 	</test>
  
  
+ <test name="View Particular User Details">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.cucumber.TestRunner.ViewUserRunner" />	
+			
+		</classes>
+	</test>
+	
+	<test name="SearchForAParticularTeacher">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.cucumber.TestRunner.SearchForAParticularTeacherRunner" />	
+			
+		</classes>
+	</test>
+	
+	
+	<test name="AddRolesToAparticularUser">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.cucumber.TestRunner.addRolesToAparticularUserRunner" />	
+			
+		</classes>
+	</test>
+	
 </suite>
 
 

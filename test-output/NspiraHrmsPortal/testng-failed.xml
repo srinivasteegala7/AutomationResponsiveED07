@@ -4,18 +4,18 @@
   <listeners>
     <listener class-name="com.cucumber.utility.Listener"/>
   </listeners>
-  <test thread-count="5" name="Edit Particulaser details(failed)">
+  <test thread-count="5" name="AddRolesToAparticularUser(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.cucumber.TestRunner.EditparticularuserdetailsRunner">
+      <class name="com.cucumber.TestRunner.addRolesToAparticularUserRunner">
         <methods>
           <include name="feature" invocation-numbers="0"/>
           <include name="setUpClass"/>
-          <include name="beforeclass"/>
-          <include name="tearDownClass"/>
           <include name="testDownClass"/>
+          <include name="tearDownClass"/>
+          <include name="beforeclass"/>
         </methods>
-      </class> <!-- com.cucumber.TestRunner.EditparticularuserdetailsRunner -->
+      </class> <!-- com.cucumber.TestRunner.addRolesToAparticularUserRunner -->
     </classes>
-  </test> <!-- Edit Particulaser details(failed) -->
+  </test> <!-- AddRolesToAparticularUser(failed) -->
 </suite> <!-- Failed suite [NspiraHrmsPortal] -->

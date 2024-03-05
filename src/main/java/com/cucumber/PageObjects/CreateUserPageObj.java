@@ -1,5 +1,8 @@
 package com.cucumber.PageObjects;
 
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -7,6 +10,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.cucumber.TestBase.TestBase;
 import com.cucumber.utility.Constants;
 import com.cucumber.utility.JavaUtility;
 import com.cucumber.utility.RandomStringGenerator;
@@ -15,6 +19,16 @@ import com.cucumber.utility.excelGeniricUtillity;
 
 
 public class CreateUserPageObj {
+	WebDriver driver;
+	Actions act;
+	TestBase testbase;
+	private final int TIMEOUT_WAIT = 30;
+	private final int POOLING_WAIT = 8000;
+	private final int WAIT = 2000;
+	 By searchByDropDown = By.xpath("//mat-label[text()='Search By:']/../../../..");
+		By searchBySelect = By.xpath("//span[text()='Username']");
+		By EnterUserName = By.xpath("//label[@for='searchInput']");
+		By goButton = By.xpath("//span[text()='Go']");
 	
 	@FindBy(xpath = "//mat-label[text()=\"Institution's:\"]")
 	private WebElement institutinsDropDown;
@@ -215,6 +229,7 @@ public class CreateUserPageObj {
 		act.moveToElement(date2).click().build().perform();
 		Thread.sleep(2000);
 		cup.getSufixDropDown().click();
+		Thread.sleep(2000);
 		driver.findElement(By.xpath("//span[text()='"+Suffix+"']")).click();
 		Thread.sleep(2000);
 		cup.getTimeZoneIDDropDown().click();
@@ -237,6 +252,24 @@ public class CreateUserPageObj {
 		Thread.sleep(2000);
 		cup.getReEnterPassWordText().sendKeys(Password);
 		Thread.sleep(2000);
+		
+		cup.getUserNameText().click();
+//		Robot robot = new Robot();
+//		// Simulate Ctrl + A to select all text
+//		robot.keyPress(KeyEvent.VK_CONTROL); // Press Ctrl key
+//        robot.keyPress(KeyEvent.VK_A); // Press A key
+//        robot.keyRelease(KeyEvent.VK_A); // Release A key
+//        robot.keyRelease(KeyEvent.VK_CONTROL); // Release Ctrl key
+//        // Simulate Ctrl + C to copy
+//        robot.keyPress(KeyEvent.VK_CONTROL); // Press Ctrl key
+//        robot.keyPress(KeyEvent.VK_C); // Press C key
+//        robot.keyRelease(KeyEvent.VK_C); // Release C key
+//        robot.keyRelease(KeyEvent.VK_CONTROL); // Release Ctrl key
+//		Thread.sleep(2000);
+//		robot.keyPress(KeyEvent.VK_CONTROL); 
+//		robot.keyPress(KeyEvent.VK_V); 
+//		robot.keyRelease(KeyEvent.VK_V); 
+//		robot.keyRelease(KeyEvent.VK_CONTROL);
 //		cup.getCreateButton().click();
 //		Thread.sleep(2000);
 //		cup.getCreateUserOkButton().click();
@@ -249,8 +282,38 @@ public class CreateUserPageObj {
 		Constants.driver.findElement(By.xpath("(//span[text()='Create'])[2]")).click();
 	}
 		
-	public void CreateUserOkButton()
+	public void CreateUserOkButton() throws Exception
 	{
 		Constants.driver.findElement(By.xpath("//button[text()='OK']")).click();
+//		Thread.sleep(5000);
+//		Constants.driver.findElement(By.xpath("//span[text()='GO']")).click();
+//		Thread.sleep(4000);
+//		Constants.driver.findElement(By.xpath("//input[@placeholder='Search User']/..")).click();
+//		Constants.driver.findElement(By.xpath("//input[@placeholder='Search User']/..")).
+//		sendKeys("robot.keyPress(KeyEvent.VK_CONTROL); \r\n"
+//				+ "		robot.keyPress(KeyEvent.VK_V); \r\n"
+//				+ "		robot.keyRelease(KeyEvent.VK_V); \r\n"
+//				+ "		robot.keyRelease(KeyEvent.VK_CONTROL);");
+		
+//		
+//			testbase.waitForElement(Constants.driver.findElement(By.xpath("//mat-label[text()='Search By:']/../../../..")), TIMEOUT_WAIT, POOLING_WAIT);
+//	    	Constants.driver.findElement(searchByDropDown).click();
+//	    	testbase.waitForElement(Constants.driver.findElement(By.xpath("//mat-label[text()='Search By:']/../../../..")), TIMEOUT_WAIT, POOLING_WAIT);
+//	    	Constants.driver.findElement(searchBySelect).click();
+//	    	Thread.sleep(WAIT);
+//	    	testbase.waitForElement(Constants.driver.findElement(EnterUserName), TIMEOUT_WAIT, POOLING_WAIT);
+//	    	Constants.driver.findElement(EnterUserName).click();
+//	    	Thread.sleep(WAIT);
+//	    	Constants.driver.findElement(EnterUserName).sendKeys("robot.keyPress(KeyEvent.VK_CONTROL); // Press Ctrl key\r\n"
+//	    			+ "		robot.keyPress(KeyEvent.VK_V); // Press V key\r\n"
+//	    			+ "		robot.keyRelease(KeyEvent.VK_V); // Release V key\r\n"
+//	    			+ "		robot.keyRelease(KeyEvent.VK_CONTROL); // Release Ctrl key");
+//	    	Thread.sleep(WAIT);
+//	    	Thread.sleep(WAIT);
+//	    	testbase.waitForElement(Constants.driver.findElement(goButton), TIMEOUT_WAIT, POOLING_WAIT);
+//	    	Constants.driver.findElement(goButton).click();
+//	    	Thread.sleep(WAIT);
+		
+		
 	}
 }

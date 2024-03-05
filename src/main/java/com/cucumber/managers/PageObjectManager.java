@@ -7,6 +7,9 @@ import com.cucumber.PageObjects.CreateUserPageObj;
 import com.cucumber.PageObjects.DropDownPageObj;
 import com.cucumber.PageObjects.EditparticularuserdetailspageObj;
 import com.cucumber.PageObjects.LoginPageObjects;
+import com.cucumber.PageObjects.SearchForAParticularTeacherpageObj;
+import com.cucumber.PageObjects.ViewParticularUserpageObj;
+import com.cucumber.PageObjects.addRolesToAparticularUserpageObj;
 import com.cucumber.PageObjects.allUserManagementDropDwnHandlePageObj;
 import com.cucumber.PageObjects.sreachUserpageObj;
 import com.cucumber.utility.Constants;
@@ -31,6 +34,12 @@ public class PageObjectManager {
 	private EditparticularuserdetailspageObj edit;
 	 
 	private CreateDuplicateUserPageObj Duplicate;
+	
+	private ViewParticularUserpageObj view;
+	
+	private SearchForAParticularTeacherpageObj TeacherView;
+	
+	private addRolesToAparticularUserpageObj AddRole;
 
 	
 	
@@ -97,6 +106,27 @@ public class PageObjectManager {
 			Duplicate = new CreateDuplicateUserPageObj(Constants.driver);
 		}
 		return Duplicate;
+	}
+	
+	public ViewParticularUserpageObj getViewUser() {
+		if (view == null) {
+			view = new ViewParticularUserpageObj(Constants.driver);
+		}
+		return view;
+	}
+	
+	public SearchForAParticularTeacherpageObj getTeacherView() {
+		if (TeacherView == null) {
+			TeacherView = new SearchForAParticularTeacherpageObj(Constants.driver);
+		}
+		return TeacherView;
+	}
+	
+	public addRolesToAparticularUserpageObj getAddRole() {
+		if (AddRole == null) {
+			AddRole = new addRolesToAparticularUserpageObj(Constants.driver);
+		}
+		return AddRole;
 	}
 	
 }

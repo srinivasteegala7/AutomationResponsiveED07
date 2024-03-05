@@ -1,14 +1,25 @@
 package com.cucumber.stepdefination;
 
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.interactions.Actions;
+
 import com.cucumber.PageObjects.CreateUserPageObj;
 import com.cucumber.PageObjects.LoginPageObjects;
+import com.cucumber.TestBase.TestBase;
 import com.cucumber.utility.Constants;
 import com.cucumber.utility.TestContext;
 
 import cucumber.api.java.en.*;
 
 public class CreateNewUser {
+	WebDriver driver;
+	Actions act;
+	TestBase testbase;
+	private final int TIMEOUT_WAIT = 30;
+	private final int POOLING_WAIT = 8000;
+	private final int WAIT = 2000;
 	TestContext testContext;
 	LoginPageObjects login;
 	CreateUserPageObj user;
@@ -50,6 +61,7 @@ public class CreateNewUser {
 	@Then("^click on OK button$")
 	public void click_on_OK_button() throws Throwable {
 	    user.CreateUserOkButton();
+	   
 	}
 
 	@And("^SignOut$")
